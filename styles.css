@@ -1,10 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sunshiney&display=swap');
 
-h1{
-    font-family: "Sunshiney", cursive;
+h1 {
+  font-family: "Sunshiney", cursive;
   font-weight: 400;
 }
-p{
-    font-family: "Sunshiney", cursive;
+
+p {
+  font-family: "Sunshiney", cursive;
   font-weight: 100;
+}
+
+.star-overlay-left {
+  position: absolute;
+  /* Make it positioned relative to its container */
+  top: 25%;
+  left: 10%;
+  width: 20%;
+  /* Stretch to full width of the container */
+  height: auto;
+  transform: scaleX(-1);
+  /* Stretch to full height of the container */
+  z-index: 1;
+  /* Place the image behind the hero content */
+}
+
+.star-overlay-right {
+  position: absolute;
+  /* Make it positioned relative to its container */
+  top: 25%;
+  right: 10%;
+  width: 20%;
+  /* Stretch to full width of the container */
+  height: auto;
+  /* Stretch to full height of the container */
+  z-index: 1;
+  /* Place the image behind the hero content */
 }
