@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sunshiney&display=swap');
+
+h1{
+    font-family: "Sunshiney", cursive;
+  font-weight: 400;
+}
+p{
+    font-family: "Sunshiney", cursive;
+  font-weight: 100;
+}

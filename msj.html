@@ -1,38 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Silly Journal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    body.dark {
-      --bg-color: #000;
-      --bg-secondary-color: #131316;
-      --font-color: #f5f5f5;
-      --color-grey: #ccc;
-      --color-darkGrey: #777;
-    }
-  </style>
-<body>
-    <header></header>
-    <main>
-        <div class="row">
-            <div class="card is-center col-3"></div>
-            <div class="card is-center col-3">ANNA</div>
-            <div class="card is-center col-3"></div>
-        </div>
-           
 
-    </main>
-    <footer></footer>
+<body>
+    
+    <section class="hero is-fullheight"
+        style="background-image: url('images/mjs_hero.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-head">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <img src="https://bulma.io/assets/images/bulma-type-white.png" alt="Bulma Logo" />
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroC">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroC" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="#about" class="button is-inverted">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title"  style="color: black;">My Silly Journal:</h1>
+                <p class="subtitle" style="color: black;">Notes,quotes and memories</p>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+                        <li class="is-active"><a>Entries</a></li>
+                        <li class="is-active"><a href="#about">About</a></li>
+                        <li class="is-active"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
 </body>
-<script>
-    if (window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.body.classList.add('dark');
-    }
-  </script>
+
 </html>
