@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sunshiney&display=swap');
 
-h1 {
+h1, .subtitle {
   font-family: "Sunshiney", cursive;
   font-weight: 400;
 }
 
-p {
-  font-family: "Sunshiney", cursive;
-  font-weight: 100;
-}
+
 
 .star-overlay-left {
   position: absolute;
@@ -35,4 +32,16 @@ p {
   /* Stretch to full height of the container */
   z-index: 1;
   /* Place the image behind the hero content */
+}
+
+.blog_post
+{
+  padding-top: 5%;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-bottom: 5%;
+}
+
+msj_tabs{
+  color: black;
 }
