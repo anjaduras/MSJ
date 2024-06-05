@@ -46,20 +46,22 @@
             </div>
             <div class="hero-foot">
                 <div class="tabs is-centered is-boxed">
-                    <ul>
-                        <li class="is-active">
-                            <a class="button is-small"><span class="icon is-small"><i
-                                class="fa fa-angle-double-down" aria-hidden="true"></i></span></a>
-                        </li>
-                    </ul>
+                  <ul>
+                    <li class="is-active">
+                      <a class="button is-small" href="#start_text" onclick="scrollToTarget(event)">
+                        <span class="icon is-small"><i class="fa fa-angle-double-down" aria-hidden="true"></i></span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
         </section>
         <img src="images/cloves.webp" alt="Stars" class="star-overlay-left">
         <img src="images/cloves.webp" alt="Stars" class="star-overlay-right">
     </header>
     <main>
-        <div class="content blog_post">
+        <div class="content blog_post" id="start_text">
             <h1>Hello World</h1>
             <p>
                 Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing
@@ -104,5 +106,10 @@
         </div>
     </footer>
 </body>
-
+<script>
+    function scrollToTarget(event) {
+      const targetElement = document.querySelector(this.getAttribute('href'));
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    </script>
 </html>

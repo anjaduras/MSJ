@@ -6,7 +6,9 @@ h1,
   font-weight: 400;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 .star-overlay-left {
   position: absolute;
