@@ -53,6 +53,6 @@ h1,
   padding-bottom: 5%;
 }
 
-msj_tabs {
-  color: black;
+.msj_tabs a {
+  color: #333; /* Set the text color for tabs */
 }
